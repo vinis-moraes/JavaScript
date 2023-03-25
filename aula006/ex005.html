@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 005</title>
+    <style>
+        html{
+            background-color: gray;
+        }
+        body{
+            background: white;
+            border-radius: 30px;
+            height: 98vh;
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1{
+            padding-top: 20px;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            margin-left: 10px;
+            text-indent: 30px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg"><p>Clique em mim</p></div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        
+        var d = document.getElementById('msg')
+        d.style.background = 'yellow'
+        d.innerHTML = '<p>Estou aguardando...</p>'
+    </script>
+</body>
+</html>
