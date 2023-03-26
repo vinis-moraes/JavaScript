@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 007</title>
+    <style>
+        html{
+            background-color: antiquewhite;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 30px;
+            border: 2px solid black;
+            height: 95vh;
+            margin: auto;
+            margin-top: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        label{
+            margin-left: 20px;
+        }
+        label, input{
+            margin-top: 20px;
+        }
+        input{
+            border-radius: 10px;
+            width: 100px;
+            height: 20px;
+            font-size: 0.8em;
+        }
+        input#somar{
+            display: block;
+            height: 40px;
+            width: 110px;
+            background-color: aqua;
+            margin: auto;
+            margin-top: 30px;
+        }
+        p{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <label for="n1">Digite o primeiro número: <input type="number" name="n1" id="n1"></label> <br>
+    <label for="n2">Digite o segundo número: <input type="number" name="n2" id="n2"></label> <br>
+    <input id="somar" type="button" value="Somar Agora!" onclick="somar()">
+    <p>A soma dos valores inseridos é <span id="result">0</span>.</p>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('n1')
+            var tn2 = window.document.getElementById('n2')
+            var result = window.document.getElementById('result')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2
+            result.innerHTML = soma
+        }
+    </script>
+</body>
+</html>
