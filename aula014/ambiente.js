@@ -1,6 +1,6 @@
 console.log('Vai começar...')
 
-for (var c = 1; c <= 16392; c++) {
+for (var c = 1; c <= 32; c++) {
     console.log(c)
 }
 
