@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    padding: 20px;
+}
+
+body, html{
+    background-color: rgb(70, 142, 236) ;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    margin: auto;
+    vertical-align: middle;
+    height: 95vh;
+}
+
+section{
+    background-color: white;
+    max-width: 320px;
+    max-height: 475px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.286);
+    margin: auto;
+    padding: 20px;
+    display: block;
+}
+
+img{
+    max-width: 200px;
+}
+
+footer{
+    margin: 0px;
+    background-color: gray;
+    width: 100vw;
+    height: 40px;
+    padding: 0px;
+    display: block;
+    transform: translate(0px, -20%);
+}
+
+footer > p{
+    text-align: center;
+    padding-top: 10px;
+}
+
+div{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+input#but{
+    padding: 10px;
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 15px;
+}
+
+#but:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+    width: 250px;
+    height: 60px;
+    transition: .2s;
+}
+
+#tabuada{
+    width: 200px;
+    height: min-content;
+    border-radius: 20px;
+    overflow: hidden;
+    border: solid black 1px;
+    padding: 10px;
+
+}
+
+option{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 3px;
+}
